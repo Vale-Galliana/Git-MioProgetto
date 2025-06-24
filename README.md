@@ -1,2 +1,1 @@
 # Galliana Valentina: Progetto Git
-
