@@ -18,3 +18,4 @@ count[letter] = 1
 for (key in count){
 writeoutput(key & ": " & count[key] & "<br>")
 }
+</cfscript>
