@@ -1,0 +1,16 @@
+<cfscript>
+function giorno(data){
+giorni=["Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato","Domenica"]
+tot=dayOfWeek(data)
+if( tot == 1){
+tot = 7
+}else{
+tot-=1
+}
+
+return giorni[tot]
+} 
+risultato=giorno("2025-06-1")
+writeoutput(risultato)
+
+</cfscript>
