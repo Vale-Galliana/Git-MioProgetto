@@ -1,6 +1,5 @@
 <cfscript>
     fasi = ["Lettura", "Elaborazione", "Salvataggio"]
-    
 tempoTotInizio = getTickCount()
 
 
