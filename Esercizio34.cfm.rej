@@ -13,7 +13,6 @@ diff a/Esercizio34.cfm b/Esercizio34.cfm	(rejected hunks)
 -  </utente>
 -</utenti>
 -';
--
 -personaXML = xmlParse(persona);
 -
 -utenti = xmlSearch(personaXML, "//utente");
