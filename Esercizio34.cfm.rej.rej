@@ -1,0 +1,9 @@
+diff a/Esercizio34.cfm.rej b/Esercizio34.cfm.rej	(rejected hunks)
+@@ -13,7 +13,6 @@
+ -  </utente>
+ -</utenti>
+ -';
+--
+ -personaXML = xmlParse(persona);
+ -
+ -utenti = xmlSearch(personaXML, "//utente");
