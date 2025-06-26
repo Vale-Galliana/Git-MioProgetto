@@ -1,0 +1,25 @@
+<cfscript>
+persona = '
+<utenti>
+  <utente>
+    <nome>Mario</nome>
+    <eta>30</eta>
+  </utente>
+  <utente>
+    <nome>Anna</nome>
+    <eta>25</eta>
+  </utente>
+</utenti>
+';
+
+personaXML = xmlParse(persona);
+
+utenti = xmlSearch(personaXML, "//utente");
+
+nomi = [];
+for (u in utenti) {
+    arrayAppend(nomi, u.nome.xmlText);
+}
+
+writeOutput(arrayToList(nomi)); 
+</cfscript>
