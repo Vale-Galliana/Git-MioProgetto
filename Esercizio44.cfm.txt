@@ -1,0 +1,12 @@
+<cfscript>
+numRighe=5
+asterischi=[]
+for(i=1;i<=numRighe;i++){
+arrayAppend(asterischi,repeatString("*",i))
+}
+for (i=1; i<= asterischi.len();i++){
+writeoutput(asterischi[i] & "<br>")
+}
+
+
+</cfscript>
