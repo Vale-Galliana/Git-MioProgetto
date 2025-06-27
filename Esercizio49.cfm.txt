@@ -1,0 +1,17 @@
+<cfscript>
+numeri = [4,7,2,9,5]
+
+max=-9999999999
+max2=-9999999
+for(i=1;i<= arraylen(numeri);i++){
+num=numeri[i]
+if(num>max){
+max2=max
+max=num
+}else if(num>max2 && num !=max) {
+max2=num
+}
+}
+
+writeoutput("Il numero massimo è: " & max & "<br> Il secondo numero più grande è: " & max2)
+</cfscript>
