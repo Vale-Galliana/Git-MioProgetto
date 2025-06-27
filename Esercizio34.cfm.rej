@@ -1,5 +1,4 @@
-diff a/Esercizio34.cfm b/Esercizio34.cfm	(rejected hunks)
-@@ -1,25 +0,0 @@
+
 -<cfscript>
 -persona = '
 -<utenti>
