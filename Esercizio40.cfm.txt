@@ -1,0 +1,10 @@
+<cfscript>
+Num=4
+qua=0
+ris=0
+for(i=1; i<=num; i++){
+qua=i^2
+ris+=qua
+}
+writeoutput(ris)
+</cfscript>
