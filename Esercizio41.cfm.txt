@@ -1,0 +1,12 @@
+<cfscript>
+Num=12
+count=0
+div=[]
+for(i=1;i<=num;i++){
+if(num % i == 0){
+arrayappend(div,i)
+count+=1
+}
+}
+writeoutput("Divisori: "&arrayToList(div)& "<br>" &"Quanti sono i divisori:   " & count)
+</cfscript>
