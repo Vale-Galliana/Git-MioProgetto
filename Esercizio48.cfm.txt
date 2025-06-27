@@ -1,0 +1,11 @@
+<cfscript>
+testo="casa"
+
+testo=rereplace(testo,"a","4","all")
+testo=rereplace(testo,"e","3","all")
+testo=rereplace(testo,"i","1","all")
+testo=rereplace(testo,"o","0","all")
+testo=rereplace(testo,"s","5","all")
+
+writeoutput(testo)
+</cfscript>
