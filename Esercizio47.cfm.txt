@@ -1,0 +1,13 @@
+<cfscript>
+lunghezza=50
+riga=[]
+for(i=1;i<=lunghezza;i++){
+if(i % 2 == 0){
+arrayAppend(riga,"-")
+}else if(i % 2 != 0){
+arrayAppend(riga,"+")
+}
+}
+ris= reREplace(arrayToList(riga),",","","all")
+writeoutput(ris)
+</cfscript>
