@@ -1,0 +1,15 @@
+<cfscript>
+function testo(valori){
+var count=0
+for(var i=1;i<= arrayLen(valori);i++){
+if(valori[i] == "" or valori[i]== "null" or valori[i]==" " ){
+count+=1
+}
+}
+return count
+}
+    
+parole=["null", "", "ciao", "null", "", "test", ""," "]
+risultato=testo(parole)
+writeoutput(risultato)
+</cfscript>
