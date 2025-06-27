@@ -1,0 +1,13 @@
+<cfscript>
+numero=0
+binario="1101"
+Lbinario=(listToArray(binario,""))
+esp=Lbinario.len()- 1
+somma=0
+for(i=1;i<=Lbinario.len();i++){
+numero = val(Lbinario[i])*(2^esp)
+somma+=numero
+esp-=1
+}
+writeoutput(numero)
+</cfscript>
