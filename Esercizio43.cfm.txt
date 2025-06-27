@@ -1,0 +1,15 @@
+<cfscript>
+testo="ciao come stai?"
+Atesto=listToArray(testo,"")
+ris=[]
+for (i=1; i<= Atesto.len();i++){
+if(i % 2==0){
+arrayappend(ris,lCase(testo[i]))
+}else if(i % 2!=0){
+arrayappend(ris,UCase(testo[i]))
+}
+}
+risultato=arrayToList(ris)
+testoRis=reReplace(risultato,",","","all")
+writeoutput(testoRis)
+</cfscript>
